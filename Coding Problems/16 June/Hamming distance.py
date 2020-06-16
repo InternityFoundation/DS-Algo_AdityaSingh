@@ -6,7 +6,7 @@ c=a^b #By doing xor of the two numbers we will get 1 corresponding to those bits
 def countsetbits(n):
     count=0
     while(n):
-        count+=n&1
-        n>>=1
+        count+=n&1 # Check last bit
+        n>>=1 #Right shift number by 1 
     return count
 print(countsetbits(c))
